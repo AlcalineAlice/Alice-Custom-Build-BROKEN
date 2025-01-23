@@ -1,6 +1,7 @@
 .equ ItemTable, SkillTester+4
 .equ DeityID, ItemTable+4
 .equ gBattleData, 0x203a4d4
+.equ DragonEffectiveness, 0x8B4DF44
 .thumb
 push {r4-r7,lr}
 @goes in the battle loop.
@@ -38,9 +39,22 @@ add r0,r1           @add both values together to obtain the exact location for t
 mov r1,#0x1C        @get the weapon rank byte for defender
 ldrb r0,[r0,r1]     @load its value
 cmp r0, #251        @check if S rank
-beq DefenderCheck
-@if not S rank, reduce damage as normal
+bne HalveDefenderDamage     @if not S rank, reduce damage as normal
 
+@Check if defender's weapon is dragon effective
+mov r1,#0x4A        @get the weapon ID and uses before battle byte
+ldrb r0,[r5,r1]     @load the weapon ID for the defender seperately by loading it as a byte instead of a short
+mov r1,#0x24        @move the value that represents the length of the item struct into a register
+mul r0,r1           @multiply both together to get the item's position in the item table
+ldr r1,ItemTable    @load the item table
+add r0,r1           @add both values together to obtain the exact location for the item in the table
+mov r1,#0x10        @get the weapon effectiveness byte for defender
+ldr r0,[r0,r1]     @load its value
+ldr r2,=DragonEffectiveness     @load the dragon effectiveness pointer
+cmp r0, r2          @check if it points to DragonEffectiveness
+beq DefenderCheck   @if it is, don't reduce damage
+
+HalveDefenderDamage:
 mov r1, r4
 add r1, #0x5C  		@defender def
 ldrh r2,[r1]		@load it to register
@@ -78,9 +92,23 @@ add r0,r1           @add both values together to obtain the exact location for t
 mov r1,#0x1C        @get the weapon rank byte for defender
 ldrb r0,[r0,r1]     @load its value
 cmp r0, #251        @check if S rank
-beq End
-@if not S rank, reduce damage as normal
+bne HalveAttackerDamage     @if not S rank, reduce damage as normal
 
+@Check if attacker's weapon is dragon effective
+mov r1,#0x4A        @get the weapon ID and uses before battle byte
+ldrb r0,[r4,r1]     @load the weapon ID for the defender seperately by loading it as a byte instead of a short
+mov r1,#0x24        @move the value that represents the length of the item struct into a register
+mul r0,r1           @multiply both together to get the item's position in the item table
+ldr r1,ItemTable    @load the item table
+add r0,r1           @add both values together to obtain the exact location for the item in the table
+mov r1,#0x10        @get the weapon effectiveness byte for defender
+ldr r0,[r0,r1]      @load its value
+ldr r2,=DragonEffectiveness     @load the dragon effectiveness pointer
+cmp r0, r2          @check if it points to DragonEffectiveness
+beq End             @if it is, don't reduce damage
+
+
+HalveAttackerDamage:
 mov r1, r5
 add r1, #0x5C  		@attacker def
 ldrh r2,[r1]		@load it to register
@@ -108,3 +136,6 @@ bx r0
 SkillTester:
 @POIN SkillTester
 @WORD DeityID
+
+@0x8B4DF44 - DragonEffectiveness sym file pointer
+@0x88ADF13 - DragonEffectiveness pointer in FEBuilder. Are these seperate?
