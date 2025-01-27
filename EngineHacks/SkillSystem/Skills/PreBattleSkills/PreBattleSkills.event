@@ -509,6 +509,12 @@ LunarBraceSkill:
 POIN SkillTester
 WORD LunarBraceID
 
+ALIGN 4
+BruteForce:
+#incbin "BruteForce/BruteForce.dmp"
+POIN SkillTester
+WORD BruteForceID
+
 
 #include "ElementBoost/ElementBoost.event"
 
