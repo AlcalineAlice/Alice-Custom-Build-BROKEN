@@ -723,7 +723,7 @@
 
 //Tome Range +1: Maximum range of equipped tome is increased.
 //By Kirb
-#define TomeRangeUpID 243
+#define TomeRangeUpID 255
 
 
 //Rounds Data Skills
@@ -1125,3 +1125,4 @@
 #define HolyShieldID 216
 #define LackOfInsightID 219
 #define TomeASCalcID 0
+#define DeityID 243

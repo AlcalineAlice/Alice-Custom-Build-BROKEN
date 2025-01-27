@@ -1077,5 +1077,8 @@ ORG SkillIcon(HolyShieldID)
 ORG SkillIcon(LackOfInsightID)
 #incbin "SkillIcons/Eclipse.dmp"
 
+ORG SkillIcon(DeityID)
+#incbin "SkillIcons/ForeignPrincess.dmp"
+
 ORG SkillIcons+0x8000
 

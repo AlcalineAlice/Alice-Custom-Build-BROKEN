@@ -1,0 +1,10 @@
+
+
+#include "EAstdlib.event"
+
+ALIGN 4
+StaffEquipmentList:
+	BYTE Heal
+	BYTE 0
+
+#include "Internal.event"
