@@ -515,6 +515,19 @@ BruteForce:
 POIN SkillTester
 WORD BruteForceID
 
+TomeASCalc:
+#incbin "TomeASCalc/TomeASCalc.dmp"
+POIN SkillTester
+POIN ItemTable
+WORD TomeASCalcID
+
+Deity:
+MESSAGE Deity skill at CurrentOffset
+#incbin "Deity/Deity.dmp"
+POIN SkillTester
+POIN ItemTable
+WORD DeityID
+
 
 #include "ElementBoost/ElementBoost.event"
 

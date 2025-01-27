@@ -35,7 +35,7 @@ pActionRoutineTable:
 	NoActionRoutine               // 0x00 ?
 	ActionRoutine(prWaitAction+1) // 0x01 Wait
 	ActionRoutine(0x3229D)        // 0x02 Combat
-	ActionRoutine(0x2FC49, True)  // 0x03 Staff
+	ActionRoutine(ActionStaffMokhaRework, True)  // 0x03 Staff
 	ActionRoutine(0x32359)        // 0x04 Dance
 	NoActionRoutine               // 0x05 ?
 	ActionRoutine(0x3247D)        // 0x06 Steal
