@@ -509,6 +509,13 @@ LunarBraceSkill:
 POIN SkillTester
 WORD LunarBraceID
 
+ALIGN 4
+Unorthodox:
+#incbin "Unorthodox/Unorthodox.dmp"
+POIN SkillTester
+POIN ItemTable
+WORD UnorthodoxID
+
 
 #include "ElementBoost/ElementBoost.event"
 

@@ -34,4 +34,4 @@ ColorzCore A FE8 "-output:%target_rom%" "-input:%main_event%" "--nocash-sym:%tar
 
 echo:
 echo Done!
-rem pause
+pause
