@@ -1042,7 +1042,7 @@
 
 #define AirSuperiorityID 25
 #define GambleFE14ID 255
-#define GuardID 10
+#define GuardID 255
 #define HeartseekerID 80
 
 
@@ -1127,3 +1127,4 @@
 #define BruteForceID 192
 #define TomeASCalcID 0
 #define DeityID 243
+#define AversionID 10
