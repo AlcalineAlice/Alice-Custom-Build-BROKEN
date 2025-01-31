@@ -513,6 +513,7 @@ ALIGN 4
 Unorthodox:
 #incbin "Unorthodox/Unorthodox.dmp"
 POIN SkillTester
+POIN ClassTable
 POIN ItemTable
 WORD UnorthodoxID
 
