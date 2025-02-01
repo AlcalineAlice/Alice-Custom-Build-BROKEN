@@ -191,6 +191,14 @@ POIN AuraSkillCheck
 WORD DivinelyInspiringID
 
 ALIGN 4
+Aversion:
+#incbin "Aversion/Aversion.dmp"
+POIN SkillTester
+POIN AuraSkillCheck
+WORD AversionID
+
+
+ALIGN 4
 KeepUp:
 #incbin "KeepUp/KeepUp.dmp"
 POIN AuraSkillCheck

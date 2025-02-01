@@ -517,6 +517,27 @@ POIN ClassTable
 POIN ItemTable
 WORD UnorthodoxID
 
+ALIGN 4
+BruteForce:
+#incbin "BruteForce/BruteForce.dmp"
+POIN SkillTester
+WORD BruteForceID
+
+ALIGN 4
+TomeASCalc:
+#incbin "TomeASCalc/TomeASCalc.dmp"
+POIN SkillTester
+POIN ItemTable
+WORD TomeASCalcID
+
+ALIGN 4
+Deity:
+MESSAGE Deity skill at CurrentOffset
+#incbin "Deity/Deity.dmp"
+POIN SkillTester
+POIN ItemTable
+WORD DeityID
+
 
 #include "ElementBoost/ElementBoost.event"
 

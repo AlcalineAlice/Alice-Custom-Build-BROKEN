@@ -312,7 +312,7 @@
 
 //Battle Veteran: Gain +1 damage and +5% Hit per 10 levels unit has.
 //By Datagne
-#define BattleVeteranID 192
+#define BattleVeteranID 255
 
 //Blow Skills: Apply a stat bonus when initiating battle.
 //By Rossendale
@@ -723,7 +723,7 @@
 
 //Tome Range +1: Maximum range of equipped tome is increased.
 //By Kirb
-#define TomeRangeUpID 243
+#define TomeRangeUpID 255
 
 
 //Rounds Data Skills
@@ -1042,7 +1042,7 @@
 
 #define AirSuperiorityID 25
 #define GambleFE14ID 255
-#define GuardID 10
+#define GuardID 255
 #define HeartseekerID 80
 
 
@@ -1125,3 +1125,7 @@
 #define HolyShieldID 216
 #define LackOfInsightID 219
 #define UnorthodoxID 236
+#define BruteForceID 192
+#define TomeASCalcID 0
+#define DeityID 243
+#define AversionID 10

@@ -1080,5 +1080,14 @@ ORG SkillIcon(LackOfInsightID)
 ORG SkillIcon(UnorthodoxID)
 #incbin "SkillIcons/SlayerNew.dmp"
 
+ORG SkillIcon(BruteForceID)
+#incbin "SkillIcons/AxeFaith.dmp"
+
+ORG SkillIcon(DeityID)
+#incbin "SkillIcons/ForeignPrincess.dmp"
+
+ORG SkillIcon(AversionID)
+#incbin "SkillIcons/Shade.dmp"
+
 ORG SkillIcons+0x8000
 
