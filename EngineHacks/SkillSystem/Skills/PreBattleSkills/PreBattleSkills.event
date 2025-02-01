@@ -510,17 +510,27 @@ POIN SkillTester
 WORD LunarBraceID
 
 ALIGN 4
+Unorthodox:
+#incbin "Unorthodox/Unorthodox.dmp"
+POIN SkillTester
+POIN ClassTable
+POIN ItemTable
+WORD UnorthodoxID
+
+ALIGN 4
 BruteForce:
 #incbin "BruteForce/BruteForce.dmp"
 POIN SkillTester
 WORD BruteForceID
 
+ALIGN 4
 TomeASCalc:
 #incbin "TomeASCalc/TomeASCalc.dmp"
 POIN SkillTester
 POIN ItemTable
 WORD TomeASCalcID
 
+ALIGN 4
 Deity:
 MESSAGE Deity skill at CurrentOffset
 #incbin "Deity/Deity.dmp"

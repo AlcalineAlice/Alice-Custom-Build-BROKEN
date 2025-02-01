@@ -1077,6 +1077,9 @@ ORG SkillIcon(HolyShieldID)
 ORG SkillIcon(LackOfInsightID)
 #incbin "SkillIcons/Eclipse.dmp"
 
+ORG SkillIcon(UnorthodoxID)
+#incbin "SkillIcons/SlayerNew.dmp"
+
 ORG SkillIcon(BruteForceID)
 #incbin "SkillIcons/AxeFaith.dmp"
 

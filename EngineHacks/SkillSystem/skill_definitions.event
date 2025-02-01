@@ -976,7 +976,7 @@
 
 //Bargain: Halves prices in shops.
 //By Sme
-#define BargainID 236
+#define BargainID 255
 
 //Poise: +1 Move. Negates enemy hit bonus from weapon triangle advantage.
 //By Zeta
@@ -1124,6 +1124,7 @@
 #define FatefulCritID 152
 #define HolyShieldID 216
 #define LackOfInsightID 219
+#define UnorthodoxID 236
 #define BruteForceID 192
 #define TomeASCalcID 0
 #define DeityID 243
