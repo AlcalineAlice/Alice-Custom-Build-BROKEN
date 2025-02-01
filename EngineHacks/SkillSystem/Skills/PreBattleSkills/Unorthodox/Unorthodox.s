@@ -36,6 +36,33 @@ ldr r2,[r2,r1]      @load its value
 cmp r2, #0          @check if it points to anything
 beq End             @if it doesn't, it's not effective against anything - move to end
 
+mov r1,r2
+bl IsClassTypeInEffectivenessList
+cmp r0,#0
+bne End
+b   DamageBonus
+
+IsClassTypeInEffectivenessList:
+mov r2, #0
+IsClassTypeInEffectivenessList.Loop:
+ldr r3, [r1, r2]
+cmp r3, #0
+beq IsClassTypeInEffectivenessList.RetFalse
+add r2, r2, #2
+ldrh r3, [r1, r2]
+and r3, r0
+cmp r3, #0
+bne IsClassTypeInEffectivenessList.RetTrue
+add r2, r2, #2
+b IsClassTypeInEffectivenessList.Loop
+IsClassTypeInEffectivenessList.RetTrue:
+mov r0, #1
+b IsClassTypeInEffectivenessList.End
+IsClassTypeInEffectivenessList.RetFalse:
+mov r0, #0
+IsClassTypeInEffectivenessList.End:
+bx r14
+
 
 DamageBonus:
 add		r4,#0x5A
@@ -54,6 +81,27 @@ SkillTester:
 @WORD UnorthodoxID
 
 /*
+IsClassTypeInEffectivenessList:
+mov r2, #0
+IsClassTypeInEffectivenessList.Loop:
+ldr r3, [r1, r2]
+cmp r3, #0
+beq IsClassTypeInEffectivenessList.RetFalse
+add r2, r2, #2
+ldrh r3, [r1, r2]
+cmp r3, r0
+beq IsClassTypeInEffectivenessList.RetTrue
+add r2, r2, #2
+b IsClassTypeInEffectivenessList.Loop
+IsClassTypeInEffectivenessList.RetTrue:
+mov r0, #1
+b IsClassTypeInEffectivenessList.End
+IsClassTypeInEffectivenessList.RetFalse:
+mov r0, #0
+IsClassTypeInEffectivenessList.End:
+bx r14
+
+
 ldr		r3,=#0x80176D0		@get effectiveness pointer
 mov		r2,r3
 .short	0xF800
