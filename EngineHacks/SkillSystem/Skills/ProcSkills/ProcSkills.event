@@ -218,6 +218,12 @@ POIN SkillTester
 WORD GreatShieldID
 
 ALIGN 4
+Proc_HolyShield:
+#incbin "HolyShield/proc_holyshield.dmp"
+POIN SkillTester
+WORD HolyShieldID
+
+ALIGN 4
 Proc_Vengeance:
 #incbin "Vengeance/proc_vengeance.dmp"
 POIN SkillTester

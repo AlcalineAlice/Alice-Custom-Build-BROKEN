@@ -168,7 +168,7 @@
 
 //Blossom: 2x growth rates, but 1/2 exp gain.
 //By Sme
-#define BlossomID 216
+#define BlossomID 255
 
 //Aptitude: +20% to all growth rates.
 //By Sme
@@ -312,7 +312,7 @@
 
 //Battle Veteran: Gain +1 damage and +5% Hit per 10 levels unit has.
 //By Datagne
-#define BattleVeteranID 192
+#define BattleVeteranID 255
 
 //Blow Skills: Apply a stat bonus when initiating battle.
 //By Rossendale
@@ -723,7 +723,7 @@
 
 //Tome Range +1: Maximum range of equipped tome is increased.
 //By Kirb
-#define TomeRangeUpID 243
+#define TomeRangeUpID 255
 
 
 //Rounds Data Skills
@@ -762,7 +762,7 @@
 
 //Resolve: When HP < 50%, gain 1.5x Str, Skl, & Spd.
 //By Sme
-#define ResolveID 219
+#define ResolveID 255
 
 //Fortress Defense: +5 Def, -3 Str/Mag
 //By Leonarth
@@ -976,7 +976,7 @@
 
 //Bargain: Halves prices in shops.
 //By Sme
-#define BargainID 236
+#define BargainID 255
 
 //Poise: +1 Move. Negates enemy hit bonus from weapon triangle advantage.
 //By Zeta
@@ -1042,7 +1042,7 @@
 
 #define AirSuperiorityID 25
 #define GambleFE14ID 255
-#define GuardID 10
+#define GuardID 255
 #define HeartseekerID 80
 
 
@@ -1123,3 +1123,10 @@
 #define AdeptAltID 91
 #define FatefulCritID 152
 #define QuickFingersID 115
+#define HolyShieldID 216
+#define LackOfInsightID 219
+#define UnorthodoxID 236
+#define BruteForceID 192
+#define TomeASCalcID 0
+#define DeityID 243
+#define AversionID 10

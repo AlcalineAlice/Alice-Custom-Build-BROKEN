@@ -120,6 +120,12 @@ POIN SkillTester
 WORD InsightID
 
 ALIGN 4
+LackOfInsight:
+#incbin "LackOfInsight/lackofinsight.dmp"
+POIN SkillTester
+WORD LackOfInsightID
+
+ALIGN 4
 KnightAspirant:
 #incbin "KnightAspirant/KnightAspirant.dmp"
 POIN SkillTester
@@ -502,6 +508,35 @@ LunarBraceSkill:
 #incbin "LunarBraceSkill/LunarBraceSkill.dmp"
 POIN SkillTester
 WORD LunarBraceID
+
+ALIGN 4
+Unorthodox:
+#incbin "Unorthodox/Unorthodox.dmp"
+POIN SkillTester
+POIN ClassTable
+POIN ItemTable
+WORD UnorthodoxID
+
+ALIGN 4
+BruteForce:
+#incbin "BruteForce/BruteForce.dmp"
+POIN SkillTester
+WORD BruteForceID
+
+ALIGN 4
+TomeASCalc:
+#incbin "TomeASCalc/TomeASCalc.dmp"
+POIN SkillTester
+POIN ItemTable
+WORD TomeASCalcID
+
+ALIGN 4
+Deity:
+MESSAGE Deity skill at CurrentOffset
+#incbin "Deity/Deity.dmp"
+POIN SkillTester
+POIN ItemTable
+WORD DeityID
 
 
 #include "ElementBoost/ElementBoost.event"

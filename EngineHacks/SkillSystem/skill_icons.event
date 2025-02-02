@@ -1074,5 +1074,23 @@ ORG SkillIcon(FatefulCritID)
 ORG SkillIcon(QuickFingersID)
 #incbin "SkillIcons/Cunning.dmp"
 
+ORG SkillIcon(HolyShieldID)
+#incbin "SkillIcons/VoiceOfPeace.dmp"
+
+ORG SkillIcon(LackOfInsightID)
+#incbin "SkillIcons/Eclipse.dmp"
+
+ORG SkillIcon(UnorthodoxID)
+#incbin "SkillIcons/SlayerNew.dmp"
+
+ORG SkillIcon(BruteForceID)
+#incbin "SkillIcons/AxeFaith.dmp"
+
+ORG SkillIcon(DeityID)
+#incbin "SkillIcons/ForeignPrincess.dmp"
+
+ORG SkillIcon(AversionID)
+#incbin "SkillIcons/Shade.dmp"
+
 ORG SkillIcons+0x8000
 
