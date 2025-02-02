@@ -40,10 +40,16 @@ beq	End
 
 @check action taken this turn
 ldrb  r0, [r6,#0x11]  @action taken this turn
-cmp r0, #0x06 @check if steal was used
-bne End
-cmp r0, #0x1E @check if found enemy in the fog
-beq End
+cmp r0, #0x12 @check if 'Door' was used
+beq CorrectAction
+cmp r0, #0x14 @check if 'Chest' was used
+beq CorrectAction
+cmp r0, #0x15 @check if 'Pick' was used
+beq CorrectAction
+cmp r0, #0x1A @check if 'Use' was used
+beq CorrectAction
+b End
+CorrectAction:
 ldrb  r0, [r6,#0x0C]  @allegiance byte of the current character taking action
 ldrb  r1, [r4,#0x0B]  @allegiance byte of the character we are checking
 cmp r0, r1    @check if same character
