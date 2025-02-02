@@ -441,7 +441,7 @@
 
 //Light Weight: When holding three or less items, attack speed +3.
 //Author Unknown (Initial Commit)
-#define LightWeightID 115
+#define LightWeightID 255
 
 //Loyalty: When within 2 spaces of a Lord, -3 damage taken, +15% hit.
 //By Datagne
@@ -1122,6 +1122,7 @@
 #define ReciprocalAidID 255
 #define AdeptAltID 91
 #define FatefulCritID 152
+#define QuickFingersID 115
 #define HolyShieldID 216
 #define LackOfInsightID 219
 #define UnorthodoxID 236

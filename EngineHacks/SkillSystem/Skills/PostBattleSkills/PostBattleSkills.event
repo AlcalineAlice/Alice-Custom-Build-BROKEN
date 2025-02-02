@@ -95,6 +95,12 @@ WORD CantoAltID
 WORD ENABLE_LEGACY_CANTO
 
 ALIGN 4
+QuickFingers:
+#incbin "QuickFingers/quickfingers.dmp"
+POIN SkillTester
+WORD QuickFingersID
+
+ALIGN 4
 ReMove:
 #incbin "ReMove/remove.dmp"
 POIN SkillTester

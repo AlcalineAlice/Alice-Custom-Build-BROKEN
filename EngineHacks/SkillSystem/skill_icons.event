@@ -1071,6 +1071,9 @@ ORG SkillIcon(AdeptAltID)
 ORG SkillIcon(FatefulCritID)
 #incbin "SkillIcons/Thunderstorm.dmp"
 
+ORG SkillIcon(QuickFingersID)
+#incbin "SkillIcons/Cunning.dmp"
+
 ORG SkillIcon(HolyShieldID)
 #incbin "SkillIcons/VoiceOfPeace.dmp"
 
